@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
     check(rc = COUNT, "File did not read properly.")
 
     for (int i = 0; i < COUNT; i++) {
-	printf("%c", words[i]);
+	    printf("%c", words[i]);
     }
 
     fclose(fp);
