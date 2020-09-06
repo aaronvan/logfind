@@ -1,9 +1,9 @@
-CC	  = gcc
+CC	  = gcc -g -DNDEBUG
 CFLAGS	  = -Wall -g 
 OBJFILES  = main.o
 TARGET	  = logfind
 
-all: $(TARGET)
+all: $(TARGET) $(SOURCES)
 
 $(TARGET): $(OBJFILES)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES)
