@@ -1,3 +1,4 @@
+/* Debugging macros */
 #ifndef __dbg_h__
 #define __dbg_h__
 
