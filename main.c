@@ -12,7 +12,8 @@ int main(int argc, char *argv[]) {
     fp = fopen(argv[1], "r");
     check(fp != NULL, "File failed to open.");
 
-    fread(words, sizeof(char), COUNT, fp);
+    int rc = fread(words, sizeof(char), COUNT, fp);
+    check(rc = COUNT, "File did not read properly.")
 
     for (int i = 0; i < COUNT; i++) {
 	printf("%c", words[i]);
