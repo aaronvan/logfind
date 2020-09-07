@@ -9,9 +9,11 @@ int main(int argc, char *argv[]) {
     FILE *fp = NULL;
     char words[COUNT];
 
+    // open the file
     fp = fopen(argv[1], "r");
     check(fp != NULL, "File failed to open.");
 
+    // read the file
     int rc = fread(words, sizeof(char), COUNT, fp);
     check(rc = COUNT, "File did not read properly.")
 
