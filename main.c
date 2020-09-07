@@ -3,7 +3,7 @@
 
 #include "dbg.h"
 
-#define COUNT 1000
+#define COUNT 500 
 
 int main(int argc, char *argv[]) {
     FILE *fp = NULL;
