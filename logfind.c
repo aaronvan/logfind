@@ -6,10 +6,8 @@
 char line[COUNT];
 
 void readLine(FILE *fp) {
-		// read each line
-		while (!feof(fp)) { 
-			fgets(line, COUNT, fp);
-			printf("%s", line); 
-		}
-		puts("\n");
-	}
+    // read each line
+    while (fgets(line, COUNT, fp) != NULL) {
+       printf("%s", line); 
+    }
+}
