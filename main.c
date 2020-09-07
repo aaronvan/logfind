@@ -9,11 +9,13 @@ int main(int argc, char *argv[]) {
     FILE *fp = NULL;
 	    
     // open the file
-    fp = fopen("logs.txt", "r");
+    fp = fopen("data.txt", "r");
     check(fp != NULL, "File failed to open.");
 	
     // read each line in file to sdout
     readLine(fp);	
+    // compare each word with the search word
+    searchWord(argv[1], fp);
 	
     fclose(fp);
 
