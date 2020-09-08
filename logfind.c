@@ -18,7 +18,5 @@ void readLine(FILE *fp) {
 
 void compareWords(char *a[], char *b[]){
     int rc = strncmp(global_argv, line, COUNT);
-    if (rc == 0) {
-	puts("There is a match.");
-    }
+      word_compare(rc == 0);
 }
