@@ -9,9 +9,9 @@ A lightweight, grep-like tool to search log files by keyword.
 2. Open file
 
 3. Read file one line at a time
-	a. Display line being read.
-	b. If keyword is in line --> set flag
-	c. Break
+	- Display line being read.
+	- If keyword is in line --> set flag
+	- Break
 	
 4. Close file
 
