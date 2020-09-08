@@ -2,25 +2,20 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "dbg.h"
 #include "logfind.h"
+
+extern char **global_argv;
 
 char line[COUNT];
 
 void readLine(FILE *fp) {
-    // read a line
     while (fgets(line, COUNT, fp) != NULL) {
        printf("%s", line); 
+       searchWord(global_argv[1]);
     }
-    rewind(fp);
 }
 
-void searchWord(char *argv[1], FILE *fp) {
-    // compare each word in the line 
-    // to the seach word (argv[1])
-    char *search = argv[1];
-    for (int i = 0; i < COUNT; i++) {
-      if (strcmp(search, line[i]) == 0) {
-	printf("There is a match.");
-      }
-    }
+void searchWord(char *argv[]){
+    printf("The search word is: %s\n", global_argv[1]);
 }

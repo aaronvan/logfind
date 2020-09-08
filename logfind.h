@@ -1,4 +1,4 @@
-#define COUNT 1000 
+#define COUNT 100 
 
 void readLine(FILE *fp);
-void searchWord(char *word[], FILE *fp);
+void searchWord(char *[]);

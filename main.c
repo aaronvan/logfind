@@ -5,7 +5,10 @@
 #include "dbg.h"
 #include "logfind.h"
 
+char **global_argv;
+
 int main(int argc, char *argv[]) {
+    global_argv = argv;
     FILE *fp = NULL;
 	    
     // open the file
@@ -15,7 +18,7 @@ int main(int argc, char *argv[]) {
     // read each line in file to sdout
     readLine(fp);	
     // compare each word with the search word
-    searchWord(argv[1], fp);
+    searchWord(argv[1]);
 	
     fclose(fp);
 
