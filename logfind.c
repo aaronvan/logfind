@@ -10,11 +10,15 @@ extern char **global_argv;
 char line[COUNT];
 
 void readLine(FILE *fp) {
-    while (fgets(line, COUNT, fp) != NULL) {
-       printf("%s", line); 
+    while (fscanf(fp, "%1023s", line) == 1) { 
+       compareWords(global_argv[1], line);
+       //puts(line); 
     }
 }
 
-void searchWord(char *argv[]){
-    printf("The search word is: %s\n", global_argv[1]);
+void compareWords(char *a[], char *b[]){
+    int rc = strncmp(global_argv, line, COUNT);
+    if (rc == 0) {
+	puts("There is a match.");
+    }
 }

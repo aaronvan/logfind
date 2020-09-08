@@ -1,4 +1,4 @@
-CC	  = gcc -g -DNDEBUG
+CC	  = gcc -g #-DNDEBUG
 CFLAGS	  = -Wall -g 
 OBJFILES  = main.o logfind.o
 TARGET	  = logfind
