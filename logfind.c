@@ -12,7 +12,6 @@ char line[COUNT];
 void readLine(FILE *fp) {
     while (fgets(line, COUNT, fp) != NULL) {
        printf("%s", line); 
-       searchWord(global_argv[1]);
     }
 }
 

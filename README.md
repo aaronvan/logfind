@@ -1,15 +1,18 @@
-# logfind
+## logfind
+
+A lightweight, grep-like tool to search log files by keyword.
 
 ./logfind <search word(s)>
 
-Look into directory .logs
+1. Look into directory .logs
 
-Open file
+2. Open file
 
-Read file one line at a time
-	Display line being read.
-	If keyword is in line --> set flag
+3. Read file one line at a time
+	a. Display line being read.
+	b. If keyword is in line --> set flag
+	c. Break
 	
-Close file
+4. Close file
 
-Repeat for each file
+5. Repeat for each file
