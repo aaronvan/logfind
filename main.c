@@ -15,7 +15,6 @@ int main(int argc, char *argv[]) {
     fp = fopen("data.txt", "r");
     check(fp != NULL, "File failed to open.");
 	
-    // read each line in file to sdout
     readLine(fp);	
 	
     fclose(fp);
