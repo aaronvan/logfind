@@ -9,6 +9,12 @@ char **global_argv;
 
 int main(int argc, char *argv[]) {
     global_argv = argv[1];
+
+    if (argc < 2) {
+	puts("You must enter a search word.");
+	return EXIT_FAILURE;
+    }
+
     FILE *fp = NULL;
 	    
     // open the file
