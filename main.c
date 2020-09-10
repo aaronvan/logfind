@@ -33,6 +33,7 @@ int main(int argc, char *argv[]) {
 	
     for (; i < argc; i++) {
 		readLine(fp);	
+		rewind(fp);
     }	
     fclose(fp);
 
