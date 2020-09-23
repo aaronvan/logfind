@@ -9,7 +9,7 @@ SHELL = /bin/zsh
 # project set up
 CC	  = gcc -g -DNDEBUG
 CFLAGS	  = -Wall -g 
-OBJFILES  = main.o
+OBJFILES  = main.o logfind.o
 TARGET	  = logfind
 
 .PHONY: all
